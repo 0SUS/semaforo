@@ -17,7 +17,6 @@ volatile int state = 0;
 
 // Função de callback do temporizador
 bool traffic_light_callback(struct repeating_timer *t) {
-    // Desliga todos os LEDs antes de acender o próximo
     gpio_put(LED_RED, 0);
     gpio_put(LED_YELLOW, 0);
     gpio_put(LED_GREEN, 0);
